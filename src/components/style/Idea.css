@@ -1,0 +1,40 @@
+.qhr {
+  width: 104%;
+  margin-left: -2%;
+}
+.q2 {
+  background-color: #ffffff;
+  padding: 2em;
+}
+.qpp {
+  display: flex;
+  flex-direction: row;
+}
+.answer-time {
+  color: #999999;
+  padding-left: 0.5em;
+  margin-top: -0.01em;
+}
+.profile_photo {
+  border-radius: 50%;
+  box-shadow: none;
+  width: 40px;
+  height: 40px;
+}
+.ququ {
+  font-family: 'q_serif', Georgia, Times, "Times New Roman",
+    "Hiragino Kaku Gothic Pro", "Meiryo", serif;
+  font-weight: bold;
+  line-height: 1.3;
+  color: #262626;
+  font-size: 18px;
+}
+.header_logo {
+  display: block;
+  width: 80px;
+  height: 50px;
+  background-size: 80px 23px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: none;
+}

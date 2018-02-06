@@ -1,0 +1,39 @@
+.project-image {
+  max-width: 100vw;
+  height: auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 6px 6px 12px 0px rgba(1,29,36,1);
+}
+iframe {
+  box-shadow: 6px 6px 12px 0px rgba(1,29,36,1);
+}
+.project-name, .project-name a, .project-name a:visited {
+  font-size: 1.5rem;
+  color: #68a0d9;
+  text-decoration: none;
+}
+.project-description {
+  font-size: 1rem;
+  color: #7a97a3;
+  font-weight: lighter;
+  padding-bottom: 1vh;
+}
+.project {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  font-family: Lato, Helvetica Neue, Arial, Helvetica, sans-serif;
+}
+.project-tags {
+  font-size: 0.7rem;
+  color: #7a97a3;
+  word-spacing: 0.2em;
+}
+.project-notes {
+  font-size: 0.85rem;
+  color: #5A8596;
+  word-spacing: 0.2em;
+  max-width: 55em;
+}
