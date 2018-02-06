@@ -1,3 +1,5 @@
+*This is currently hosted at [https://bnoden-pf.firebaseapp.com](https://bnoden-pf.firebaseapp.com).*
+
 Hi, my name is Brandon Oden. I develop applications and interfaces for various platforms and devices. Right now you could call me a Node.js developer with a preference for the MERN stack.  
 
 If you notice the website doing anything strange, relax, it's probably an easter egg.  
