@@ -20,10 +20,14 @@ class Project extends Component {
           </a>
         </div>
         <div className="project-notes">
-          <p>{this.props.notes}</p>
+          <p>
+            {this.props.notes}
+          </p>
         </div>
         <div className="project-tags">
-          <p>Tags: {this.props.tags ? this.props.tags : 'none'}</p>
+          <p>
+            Tags: {this.props.tags ? this.props.tags : 'none'}
+          </p>
         </div>
       </div>
     );

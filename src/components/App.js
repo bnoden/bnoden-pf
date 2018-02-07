@@ -16,7 +16,7 @@ class App extends Component {
       <div style={appStyle}>
         <Headroom>
           <Header />
-          <hr />
+          
         </Headroom>
         <div className="content">
           <Switch>

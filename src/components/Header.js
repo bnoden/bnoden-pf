@@ -27,6 +27,7 @@ class Header extends Component {
             </li>
           </ul>
         </nav>
+        <hr />
       </header>
     );
   }

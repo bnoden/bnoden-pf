@@ -12,13 +12,13 @@ iframe {
 }
 .project-name, .project-name a, .project-name a:visited {
   font-size: 1.5rem;
-  color: #68a0d9;
+  color: #287CD1;
   text-decoration: none;
 }
 .project-description {
   font-size: 1rem;
-  color: #7a97a3;
-  font-weight: lighter;
+  color: #3A7F9C;
+  font-weight: medium;
   padding-bottom: 1vh;
 }
 .project {

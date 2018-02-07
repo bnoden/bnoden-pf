@@ -22,9 +22,11 @@ const Fun = () =>
       tags="c#, unity3d, game, animation, audio, media, object-oriented"
       image={
         <iframe
-          title="This Aint No Game"
-          style={{ width: '75%', height: '40vw' }}
-          src="https://www.youtube.com/embed/I3TKRDwE2B4?rel=0"
+          title="thisaintnogame"
+          width="560"
+          height="315"
+          style={imageStyle}
+          src="https://www.youtube-nocookie.com/embed/I3TKRDwE2B4?rel=0"
           frameBorder="0"
           allowFullScreen
         />
@@ -47,5 +49,11 @@ const Fun = () =>
       }
     />
   </div>;
+
+const imageStyle = {
+  transform: window.innerWidth <= 560 ? 'scale(0.475)' : 'none',
+  transformOrigin: window.innerWidth <= 560 ? 'top left' : 'none',
+  marginBottom: window.innerWidth <= 560 ? '-10em' : '0'
+};
 
 export default Fun;
