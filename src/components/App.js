@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Headroom from 'react-headroom';
 
 import Header from './Header';
@@ -16,19 +16,20 @@ class App extends Component {
       <div style={appStyle}>
         <Headroom>
           <Header />
-          
         </Headroom>
+
         <div className="content">
           <Switch>
-            <Route exact path="/" component={Home} />
             <Route path="/current" component={Current} />
             <Route path="/fun" component={Fun} />
             <Route path="/concept" component={Concept} />
             <Route path="/misc" component={Misc} />
             <Route path="/old" component={Old} />
             <Route path="/about" component={About} />
+            <Route exact path="/" component={Home} />
           </Switch>
         </div>
+
         <div>
           <p dir={crDir()} className="copy-right">
             <strong>
