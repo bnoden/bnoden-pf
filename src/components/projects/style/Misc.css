@@ -1,0 +1,22 @@
+.imgQt {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: -2em;
+}
+
+@media only screen and (max-width: 850px) {
+  .imgQt img {
+    height: 40vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .imgQt img {
+    height: 35vh;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .imgQt img {
+    height: 30vh;
+  }
+}

@@ -19,10 +19,11 @@ class Project extends Component {
             {this.props.image}
           </a>
         </div>
+        <div className="project-multi-image">
+          {this.props.multiImage}
+        </div>
         <div className="project-notes">
-          <p>
-            {this.props.notes}
-          </p>
+          {this.props.notes}
         </div>
         <div className="project-tags">
           <p>

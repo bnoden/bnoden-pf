@@ -15,9 +15,14 @@ const Old = () =>
       description="Preview Markdown formatting before commiting"
       notes="Say hello to Quincy."
       tags="react, sass, bootstrap, ajax, javascript, html"
-      image={<img src={mdprev} alt="markdown previewer" style={{ backgroundColor: '#d0ecff' }} />}
+      image={
+        <img
+          src={mdprev}
+          alt="markdown previewer"
+          style={{ backgroundColor: '#d0ecff' }}
+        />
+      }
       href={'https://codepen.io/bnoden/full/KMVJaj/'}
-
     />
 
     <Project
@@ -32,7 +37,19 @@ const Old = () =>
     <Project
       name="js-splash"
       description="Video game splash screen in vanilla JavaScript"
-      notes="After reading YDKJS, I quit relying on jQuery for animations. This was the (overcomplicated) result."
+      notes={
+        <p>
+          After reading{' '}
+          <a
+            href="//github.com/getify/You-Dont-Know-JS"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            You Don't Know JavaScript
+          </a>, I quit relying on jQuery for animations. This was the
+          (overcomplicated) result.
+        </p>
+      }
       tags="javascript, html, css"
       image={<img src={jssprev} alt="js splash" />}
       href="https://codepen.io/bnoden/full/qNdXBZ/"
@@ -59,7 +76,18 @@ const Old = () =>
     <Project
       name="Quotes"
       description="Press the speech balloon for quotes and colors in the style of EarthBound. (Only one quote.)"
-      notes="I'm satisfied with the one quote. Text generated with ebtext (https://github.com/beager/ebtext)."
+      notes={
+        <p>
+          I'm satisfied with the one quote. Text generated with{' '}
+          <a
+            href="//github.com/beager/ebtext"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            ebtext
+          </a>.
+        </p>
+      }
       tags="jquery, javascript, html, css"
       image={<img src={quprev} alt="quotes" />}
       href="https://codepen.io/bnoden/full/NNQdLK/"
