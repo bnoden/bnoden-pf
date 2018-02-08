@@ -14,7 +14,7 @@ const Misc = () =>
         <p>
           Special thanks to Bryan Cairns for his{' '}
           <a
-            href="//www.voidrealms.com"
+            href="//www.youtube.com/playlist?list=PL2D1942A4688E9D63"
             rel="noopener noreferrer"
             target="_blank"
           >
