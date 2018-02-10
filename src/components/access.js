@@ -20,20 +20,6 @@ export const browserIs = {
   }
 };
 
-export const crDir = (normal = 'ltr', backwards = 'rtl') => {
-  const dt = new Date();
-  return dt.getSeconds() % 3 ? normal : backwards;
-};
-export const crYear = () => {
-  const dt = new Date();
-  let year = dt.getFullYear();
-  let dtmod = dt.getSeconds() + 17;
-  return dt.getSeconds() % 5 ? year : year - dtmod;
-};
-export const showtime = display => {
-  if (!display) {
-    const dt = new Date();
-    display = dt.getSeconds() % 7 ? 'none' : 'block';
-  }
-  return display;
+export const crYear = (dt = new Date()) => {
+  return dt.getFullYear();
 };

@@ -1,14 +1,9 @@
 import React from 'react';
 
 import Project from './Project';
-import Idea from '../Idea';
-import { showtime } from '../access';
 
 const Concept = () =>
   <div className="concept">
-    <div className="q2" style={{ display: showtime() }}>
-      <Idea />
-    </div>
     <Project
       name="iWantThat!"
       description="Mobile Marketplace App, school project"

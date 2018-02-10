@@ -4,14 +4,9 @@ const About = () =>
   <div className="about">
     <p>
       Hi, my name is Brandon Oden. I develop applications and interfaces for
-      various platforms and devices. Right now you could call me a Node.js
-      developer with a preference for the MERN stack.
+      various platforms and devices. Right now my time is invested in Node.js and the MERN stack.
     </p>
-    <p>
-      If you notice the website doing anything strange, relax, it's probably an
-      easter egg.<br />
-      Thank you for visiting.
-    </p>
+    
     <h2>Contact</h2>
     <p>
       <input

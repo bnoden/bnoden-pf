@@ -5,7 +5,7 @@ import Headroom from 'react-headroom';
 import Header from './Header';
 import Home from './Home';
 import About from './About';
-import { crDir, crYear } from './access';
+import { crYear } from './access';
 import { Current, Old, Fun, Concept, Misc } from './ProjectIndex';
 
 import './style/App.css';
@@ -31,7 +31,7 @@ class App extends Component {
         </div>
 
         <div>
-          <p dir={crDir()} className="copy-right">
+          <p className="copy-right">
             <strong>
               &copy;{crYear()} Brandon Oden
             </strong>
