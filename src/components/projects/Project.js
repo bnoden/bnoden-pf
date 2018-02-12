@@ -1,14 +1,26 @@
 import React, { Component } from 'react';
 
 import './style/Project.css';
+import extlink from '../../img/extlink.png';
 
 class Project extends Component {
   render() {
     return (
       <div className="project">
-        <div className="project-name">
+        <div
+          className="project-name"
+          style={{
+            display: 'flex',
+            flexDirection: 'row'
+          }}
+        >
           <a href={this.props.href} rel="noopener noreferrer" target="_blank">
             {this.props.name}
+            <img
+              src={this.props.href ? extlink : ''}
+              style={extlinkStyle}
+              alt={this.props.href ? 'open link' : ''}
+            />
           </a>
         </div>
         <div className="project-description">
@@ -34,5 +46,11 @@ class Project extends Component {
     );
   }
 }
+
+const extlinkStyle = {
+  maxWidth: '0.9em',
+  height: 'auto',
+  paddingLeft: '0.5em'
+};
 
 export default Project;
