@@ -19,7 +19,15 @@ const Misc = () =>
             target="_blank"
           >
             Qt videos
-          </a>.
+          </a>. (Now officially partnered with{' '}
+          <a
+          href="//www.youtube.com/playlist?list=PLizsthdRd0Ywl59atMhNyCydPrb6xz8wN"
+          rel="noopener noreferrer"
+          target="_blank"
+          >
+            Qt.io
+          </a>
+        )
         </p>
       }
       tags="qt, c++, ui"
