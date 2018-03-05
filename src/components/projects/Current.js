@@ -10,7 +10,7 @@ const Current = () =>
     <Project
       name="This"
       description="Not just a portfolio."
-      notes="This is a responsive single-page React app that I built, pretty much from scratch. (Did I hit all the buzzwords?) I plan to do more with it later."
+      notes="This is a responsive single-page React app that I built, pretty much from scratch. (Did I hit all the buzzwords?) Currently implementing a MongoDB backend and more."
       tags="node.js, react, react-router, css3, html5, responsive"
       image={<img src={this_prev} alt="thiss" />}
       href="https://github.com/bnoden/bnoden-pf"
