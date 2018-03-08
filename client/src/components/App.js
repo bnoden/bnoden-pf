@@ -56,9 +56,6 @@ class App extends Component {
             </strong>
           </p>
         </div>
-        <p className="App-intro">
-          {console.log(this.state.response)}
-        </p>
       </div>
     );
   }

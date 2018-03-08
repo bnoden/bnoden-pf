@@ -1,17 +1,15 @@
 {
   "name": "bnoden-pf2",
   "version": "1.0.0",
+  "license": "ISC",
   "scripts": {
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "add:all": "yarn && cd client && yarn",
+    "update:all": "yarn upgrade && cd client && yarn upgrade"
   },
   "author": "Brandon Oden <brandroid369@gmail.com>",
-  "scripts": {
-    "client": "cd client && yarn start",
-    "server": "nodemon server.js",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
-  },
   "dependencies": {
     "express": "^4.16.2"
   },
