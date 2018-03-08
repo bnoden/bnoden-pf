@@ -1,7 +1,19 @@
 const express = require('express');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+
+const routes = require('./routes');
 
 const app = express();
 const port = process.env.PORT || 5000;
+
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://localhost:27017/pftest')
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+routes(app);
 
 app.get('/', (req, res) => {
   res.send({ express: 'App is running from server.js' });

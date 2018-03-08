@@ -8,11 +8,13 @@
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
     "add:all": "yarn && cd client && yarn",
     "update:all": "yarn upgrade && cd client && yarn upgrade",
-    "build:dev": "cd client && yarn build"
+    "build": "cd client && yarn build"
   },
   "author": "Brandon Oden <brandroid369@gmail.com>",
   "dependencies": {
-    "express": "^4.16.2"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.9"
   },
   "devDependencies": {
     "concurrently": "^3.5.0"
