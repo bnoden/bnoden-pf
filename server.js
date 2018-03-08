@@ -8,15 +8,17 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/pftest')
+mongoose.connect('mongodb://localhost:27017/pf_test');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 routes(app);
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   res.send({ express: 'App is running from server.js' });
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
+
+module.exports = app;

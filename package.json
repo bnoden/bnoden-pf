@@ -8,13 +8,16 @@
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
     "add:all": "yarn && cd client && yarn",
     "update:all": "yarn upgrade && cd client && yarn upgrade",
-    "build": "cd client && yarn build"
+    "build": "cd client && yarn build",
+    "test": "cross-env NODE_ENV=test nodemon --exec 'mocha --recursive -R min'"
   },
   "author": "Brandon Oden <brandroid369@gmail.com>",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "cross-env": "^5.1.3",
     "express": "^4.16.2",
-    "mongoose": "^5.0.9"
+    "mongoose": "^5.0.9",
+    "supertest": "^3.0.0"
   },
   "devDependencies": {
     "concurrently": "^3.5.0",
