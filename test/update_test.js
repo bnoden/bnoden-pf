@@ -1,5 +1,5 @@
 const assert = require('assert');
-const Project = require('../models/project');
+const Project = require('../db/models/project');
 
 describe('Update records', () => {
   let testProject;

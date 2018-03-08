@@ -4,7 +4,8 @@ const mongoose = require('mongoose');
 
 const app = require('../server');
 
-const Project = mongoose.model('project');
+// const Project = mongoose.model('project');
+const Project = require('../db/models/project');
 
 describe('Projects controller', () => {
   it('POST to /api/projects creates a new project', done => {

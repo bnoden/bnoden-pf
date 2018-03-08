@@ -2,7 +2,7 @@ const assert = require('assert');
 const mongoose = require('mongoose');
 
 const app = require('../server');
-const Project = require('../models/project');
+const Project = require('../db/models/project');
 
 describe('Delete a project', () => {
   let testProject;
