@@ -7,7 +7,8 @@
     "server": "nodemon server.js",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
     "add:all": "yarn && cd client && yarn",
-    "update:all": "yarn upgrade && cd client && yarn upgrade"
+    "update:all": "yarn upgrade && cd client && yarn upgrade",
+    "build:dev": "cd client && yarn build"
   },
   "author": "Brandon Oden <brandroid369@gmail.com>",
   "dependencies": {
