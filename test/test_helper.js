@@ -1,22 +1,17 @@
 const mongoose = require('mongoose');
 
+const app = require('../server');
+
 before(done => {
-  mongoose.connect('mongodb://localhost/pf_test', {
-    promiseLibrary: global.Promise
-  });
+  mongoose.Promise = global.Promise;
+  mongoose.connect('mongodb://localhost/bnoden_pf_test');
   mongoose.connection
-    .once('open', () => {
-      done();
-    })
     .on('error', error => {
       console.warn('Warning', error);
-    });
+    })
+    .once('open', () => done());
 });
 
 beforeEach(done => {
-  const { projects } = mongoose.connection.collections;
-
-  projects.drop(() => {
-    done();
-  });
+  mongoose.connection.collections.projects.drop(() => done());
 });
