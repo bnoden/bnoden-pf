@@ -36,7 +36,7 @@ const Fun = () =>
     <Project
       name="BrainMaster: We Are Friends"
       description="Crappy on purpose."
-      notes="After my first experiment (thisAintNoGame), I was eager to enter a Game Jam. The Crappy Game Jam was accepting submissions. Figuring it would be a nice, gentle introduction, I entered the Jam and created the crappiest game I could within a few hours. However, the deadline moved right past me as I was adding the final touches to the staff credits theme. A fitting end, I say."
+      notes="After my first Unity3D experiment (thisAintNoGame), I was eager to enter a Game Jam. The Crappy Game Jam was accepting submissions. Figuring it would be a nice, gentle introduction, I entered the Jam and created the crappiest game I could within a few hours. However, the deadline moved right past me as I was adding the final touches to the staff credits theme. A fitting end, I say."
       tags="c#, unity3d, game, animation, audio, media"
       image={
         <iframe
