@@ -4,6 +4,7 @@ import './style/Project.css';
 import extlink from '../../img/extlink.png';
 
 class Project extends Component {
+  
   render() {
     return (
       <div className="project">
@@ -39,7 +40,7 @@ class Project extends Component {
         </div>
         <div className="project-tags">
           <p>
-            Tags: {this.props.tags ? this.props.tags : 'none'}
+            Tags: {this.props.tags ? this.props.tags.join(', ') : 'none'}
           </p>
         </div>
       </div>

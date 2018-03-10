@@ -1,4 +1,4 @@
-const Project = require('../models/project');
+const Project = require('../db/models/project');
 
 module.exports = {
   // GET

@@ -8,6 +8,8 @@ const Concept = () =>
       name="iWantThat!"
       description="Mobile Marketplace App, school project"
       notes="This is happening. People want this. (The concept, not the presentation.)"
+      tags={['mobile', 'concept']}
+      category='Concept'
       image={
         <iframe
           title="i want that"

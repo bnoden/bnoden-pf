@@ -7,7 +7,7 @@ const Project = require('../db/models/project');
 
 describe('Creating records', () => {
   const name = 'OffAndUp';
-  const section = 'Current';
+  const category = 'Current';
   const description =
     '(Formerly OfferUpUI) Cross-browser UI/UX extension for OfferUp.com';
   const notes = 'I actually use this extension every day. Really!';
@@ -24,7 +24,7 @@ describe('Creating records', () => {
   it('saves a project', done => {
     const project = new Project({
       name,
-      section,
+      category,
       description,
       notes,
       tags,
@@ -40,7 +40,7 @@ describe('Creating records', () => {
         assert(image === media[0].image);
         assert(href === media[0].href);
         assert(project.name === name);
-        assert(project.section === section);
+        assert(project.category === category);
         assert(project.description === description);
         assert(project.notes === notes);
         assert(project.tags.join(',') === tags.join(','));

@@ -21,16 +21,16 @@ const Misc = () =>
             Qt videos
           </a>. (Now officially partnered with{' '}
           <a
-          href="//www.youtube.com/playlist?list=PLizsthdRd0Ywl59atMhNyCydPrb6xz8wN"
-          rel="noopener noreferrer"
-          target="_blank"
+            href="//www.youtube.com/playlist?list=PLizsthdRd0Ywl59atMhNyCydPrb6xz8wN"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             Qt.io
           </a>
-        )
+          )
         </p>
       }
-      tags="qt, c++, ui"
+      tags={['qt', 'c++', 'ui']}
       multiImage={
         <div className="imgQt">
           <a
@@ -63,6 +63,7 @@ const Misc = () =>
           </a>
         </div>
       }
+      category="Misc"
     />
   </div>;
 

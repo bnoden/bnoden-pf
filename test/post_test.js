@@ -10,7 +10,7 @@ const Project = require('../db/models/project');
 describe('Projects controller', () => {
   it('POST to /api/projects creates a new project', done => {
     const name = 'Calculator';
-    const section = 'Old';
+    const category = 'Old';
     const description =
       'Carefully crafted calculator with issues';
     const notes = 'This was a fun and rewarding experience. I think everyone should build a calculator at least once.';
@@ -24,13 +24,13 @@ describe('Projects controller', () => {
 
     tags.sort();
     Project.count().then(count => {
-      request(app).post('/api/projects').send({ name, section, description, notes, tags, media }).end(() => {
+      request(app).post('/api/projects').send({ name, category, description, notes, tags, media }).end(() => {
         Project.count().then(newCount => {
           // console.log('count:', count);
           // console.log('newCount:', newCount);
           assert(count === 1);
           assert(Project[0].name === name);
-          assert(Project[0].section === section);
+          assert(Project[0].category === category);
           assert(Project[0].description === description);
           assert(Project[0].notes === notes);
           assert(Project[0].tags.length === tags.length);

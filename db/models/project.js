@@ -11,7 +11,7 @@ const ProjectSchema = new mongoose.Schema({
   media: [MediaSchema],
   notes: String,
   tags: [String],
-  section: String
+  category: String
 });
 
 const Project = mongoose.model('project', ProjectSchema);

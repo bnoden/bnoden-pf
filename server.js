@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/bnoden_pf');
+mongoose.connect('mongodb://localhost:27017/pftest_test');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
