@@ -21,10 +21,9 @@ class App extends Component {
       .catch(err => console.log(err));
   }
 
-  callApi = async () => {
-    const response = await fetch('/');
-    const body = await response.json();
-
+  callApi = async (response, body) => {
+    response = await fetch('/');
+    body = await response.json();
     if (response.status !== 200) throw Error(body.message);
 
     return body;
@@ -51,9 +50,7 @@ class App extends Component {
 
         <div>
           <p className="copy-right">
-            <strong>
-              &copy;{crYear()} Brandon Oden
-            </strong>
+            <strong>&copy;{crYear()} Brandon Oden</strong>
           </p>
         </div>
       </div>
