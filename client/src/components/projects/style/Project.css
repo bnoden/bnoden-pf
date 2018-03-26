@@ -31,16 +31,16 @@ iframe {
   font-weight: medium;
   padding-bottom: 1vh;
 }
-Project {
+.Project {
   padding-top: 1vh;
   padding-bottom: 1vh;
   font-family: Lato, Helvetica Neue, Arial, Helvetica, sans-serif;
 }
-Project a {
+.Project a {
   text-decoration: none;
   color: #287cd1;
 }
-Project a:visited {
+.Project a:visited {
   color: #287cd1;
 }
 .project-tags {
