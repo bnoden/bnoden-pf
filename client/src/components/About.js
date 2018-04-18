@@ -13,7 +13,7 @@ const About = () =>
     <h2>Contact</h2>
     <div style={styles.extlinkDivStyle}>
       <input
-        value="brandon.oden1@gmail.com"
+        value="brandon@bnoden.com"
         className="contact-info"
         readOnly
         style={{ width: '16.5em' }}

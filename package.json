@@ -2,6 +2,7 @@
   "name": "bnoden-pf2",
   "version": "1.0.0",
   "license": "ISC",
+  "homepage": "https://bnoden.com",
   "scripts": {
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
@@ -11,7 +12,7 @@
     "build": "cd client && yarn build",
     "test": "cross-env NODE_ENV=test nodemon --exec 'mocha --recursive -R min'"
   },
-  "author": "Brandon Oden <brandroid369@gmail.com>",
+  "author": "Brandon Oden <brandon@bnoden.com>",
   "dependencies": {
     "body-parser": "^1.18.2",
     "cross-env": "^5.1.3",
