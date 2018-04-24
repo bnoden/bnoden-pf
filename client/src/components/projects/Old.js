@@ -6,8 +6,7 @@ import { calcprev, cbprev, jssprev, mdprev, quprev, tttprev } from './img/old';
 const Old = () =>
   <div>
     <p>
-      "That does NOT belong in a museum!" Dr. Jones growled in his most
-      threatening tone.
+      Mostly beginner projects with JavaScript and jQuery.
     </p>
 
     <Project

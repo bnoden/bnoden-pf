@@ -14,3 +14,9 @@ export const browserIs = {
 };
 
 export const crYear = (dt = new Date()) => dt.getFullYear();
+
+export const my = {
+  email: 'brandon@bnoden.com',
+  linkedin: 'linkedin.com/in/bnoden',
+  github: 'github.com/bnoden'
+};
