@@ -31,7 +31,11 @@ const About = () => (
         readOnly
         style={{ width: '16.5em' }}
       />
-      <a href={`https://${my.linkedin}`} rel="noopener noreferrer" target="_blank">
+      <a
+        href={`https://${my.linkedin}`}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
         <img src={extlink} style={styles.extlinkStyle} alt="open link" />
       </a>
     </div>
@@ -43,7 +47,11 @@ const About = () => (
         readOnly
         style={{ width: '16.5em' }}
       />
-      <a href={`https://${my.github}`} rel="noopener noreferrer" target="_blank">
+      <a
+        href={`https://${my.github}`}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
         <img src={extlink} style={styles.extlinkStyle} alt="open link" />
       </a>
     </div>

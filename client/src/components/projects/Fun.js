@@ -3,17 +3,24 @@ import React from 'react';
 import Project from './Project';
 import { dits_prev } from './img/fun';
 
-const Fun = () =>
+const Fun = () => (
   <div>
     <p>Projects driven by curiosity and creative impulse.</p>
     <Project
-      name="Delight in the Season"
+      name="(Delight in the) Season"
       description="Silly experiment? (Beware: After opening link, clicking the word 'CLICK' will play audio/video.)"
       notes="I wanted to see what kinds of things could be done with HTML5 video, and this just sort of happened. Pure JavaScript (ES6). Not for mobile devices or Edge browser."
-      tags={['html5', 'html5-video', 'web-audio', 'javascript', 'css3', 'media']}
+      tags={[
+        'html5',
+        'html5-video',
+        'web-audio',
+        'javascript',
+        'css3',
+        'media'
+      ]}
       image={<img src={dits_prev} alt="season" />}
       href="https://bnoden.github.io/season/"
-      category='Fun'
+      category="Fun"
     />
 
     <Project
@@ -32,7 +39,7 @@ const Fun = () =>
           allowFullScreen
         />
       }
-      category='Fun'
+      category="Fun"
     />
 
     <Project
@@ -49,9 +56,10 @@ const Fun = () =>
           src="https://itch.io/embed/108764"
         />
       }
-      category='Fun'
+      category="Fun"
     />
-  </div>;
+  </div>
+);
 
 const imageStyle = {
   transform: window.innerWidth <= 560 ? 'scale(0.475)' : 'none',
