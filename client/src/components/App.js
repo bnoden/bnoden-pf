@@ -5,6 +5,7 @@ import Headroom from 'react-headroom';
 import Header from './Header';
 import Home from './Home';
 import About from './About';
+import { now } from './now';
 import { crYear } from './access';
 import { Current, Old, Fun, Concept, Misc } from './ProjectIndex';
 
