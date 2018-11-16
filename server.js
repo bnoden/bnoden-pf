@@ -1,23 +1,28 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-
-const routes = require('./routes');
+const routes = require('./src/routes');
+const exphbs = require('express-handlebars');
+const nodemailer = require('nodemailer');
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3002;
 
-mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/pftest_test');
+app.engine('handlebars', exphbs());
+app.set('view engine', 'handlebars');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 routes(app);
 
-app.get('/api', (req, res) => {
-  res.send({ express: 'App is running from server.js' });
+app.post('/api/form', (req, res) => {
+  nodemailer.createTest;
 });
+
+app,
+  get('/', (req, res) => {
+    res.send({ express: 'App is running from server.js' });
+  });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
